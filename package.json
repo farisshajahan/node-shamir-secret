@@ -1,0 +1,15 @@
+{
+  "name": "node-shamir-secret",
+  "version": "1.0.0",
+  "description": "RSA Shamir secret share over SMTP",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Faris Shajahan",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^6.4.8",
+    "shamir": "^0.7.1"
+  }
+}

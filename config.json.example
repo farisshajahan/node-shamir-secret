@@ -1,0 +1,8 @@
+{
+    "emails": ["toemail1@email.com", "toemail2@email.com"],
+    "port": 587,
+    "host": "smtp.gmail.com",
+    "from": "fromemail@email.com",
+    "password": "from email password",
+    "fromtext": "\"No Reply Bot\" <noreply@email.com>"
+}
