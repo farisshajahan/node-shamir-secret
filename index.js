@@ -49,7 +49,8 @@ function main() {
     let parts = shamirSplit(privateKey, config.emails.length);
     var count = 0;
     for (sharenumber in parts) {
-        sendmail(config.emails[count++], "("+sharenumber+", "+Buffer.from(parts[sharenumber]).toString('hex')+")");
+        var share = {"id":sharenumber, "share":Buffer.from(parts[sharenumber]).toString('hex')}
+        sendmail(config.emails[count++], JSON.stringify(share);
     }
 }
 
