@@ -45,6 +45,7 @@ function shamirSplit(secret, parts) {
 
 function main() {
     const { privateKey, publicKey } = generateKeys();
+    console.log(publicKey);
     let parts = shamirSplit(privateKey, config.emails.length);
     var count = 0;
     for (sharenumber in parts) {
