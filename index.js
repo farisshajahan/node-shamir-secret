@@ -50,7 +50,7 @@ function main() {
     var count = 0;
     for (sharenumber in parts) {
         var share = {"id":sharenumber, "share":Buffer.from(parts[sharenumber]).toString('hex')}
-        console.log(share);
+        console.log(JSON.stringify(share));
         //sendmail(config.emails[count++], JSON.stringify(share);
     }
 }
